@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import GlobalStyles from './global'
+import { MainContainer, PageContainer } from './components/container/style';
+import { HeroBanner, LogoBar, Solution, Session, ContactInfo, Newsletter, Footer } from './components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContainer>
+      <GlobalStyles />
+      <PageContainer>
+        <HeroBanner />
+        <LogoBar />
+        <Solution />
+        <Session />
+        <ContactInfo />
+        <Newsletter />
+        <Footer />
+      </PageContainer>
+    </MainContainer>
   );
 }
 
