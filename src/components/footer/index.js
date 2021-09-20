@@ -1,5 +1,5 @@
 import React from 'react';
-import { WrapFooter, WrapLeft, WrapRight, FooterIcons, WrapIcons } from './styles';
+import { WrapFooter, WrapLeft, WrapRight, FooterIcons, WrapIcons, LinkImage } from './styles';
 import wppcompany from '../../assets/wppcompany.svg';
 import facebook from '../../assets/facebook.svg';
 import instagram from '../../assets/instagram.svg';
@@ -13,9 +13,15 @@ function Footer() {
       </WrapLeft>
       <WrapRight>
         <WrapIcons>
-          <FooterIcons src={facebook} alt='wppcompany logo'/>
-          <FooterIcons src={instagram} alt='wppcompany logo'/>
-          <FooterIcons src={linkedin} alt='wppcompany logo'/>
+          <LinkImage to={ { pathname: 'https://www.facebook.com/agencia.jussi' } } target='_blank'>
+            <FooterIcons src={facebook} alt='wppcompany logo'/>
+          </LinkImage>
+          <LinkImage to={ { pathname: 'https://www.instagram.com/jussi/' } } target='_blank'>
+            <FooterIcons src={instagram} alt='wppcompany logo'/>
+          </LinkImage>
+          <LinkImage to={ { pathname: 'https://www.linkedin.com/company/agencia-jussi/' } } target='_blank'>
+            <FooterIcons src={linkedin} alt='wppcompany logo'/>
+          </LinkImage>
         </WrapIcons>
       </WrapRight>
     </WrapFooter>

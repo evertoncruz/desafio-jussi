@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const WrapFooter = styled.footer`
   display: flex;
@@ -25,5 +26,7 @@ export const WrapRight = styled(WrapSide)`
 `;
 
 export const WrapIcons = styled.div``;
+
+export const LinkImage = styled(Link)``; 
 
 export const FooterIcons = styled.img``;

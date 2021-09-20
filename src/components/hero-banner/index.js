@@ -31,20 +31,20 @@ function HeroBanner() {
               VTEX. Precisa criar sua loja ou migrar de plataforma?
             </Paragraph>
           </WrapParagraph>
-          <PrimaryButton>Veja nossas soluções</PrimaryButton>
+          <PrimaryButton to={{ pathname: 'https://jussi.com.br/services.html' }} target='_parent' >Veja nossas soluções</PrimaryButton>
       </WrapLeft>
       <WrapRight>
         <WrapCard>
-          {/* <CardOne>
+          <CardOne>
             <WrapImage>
-              <CardImage src={geladeira} alt='foto de geladeira' />
-              <CardPrimaryButton>Mais Detalhes</CardPrimaryButton>
+              <CardImage src={batedeira} alt='foto de batedeira' />
+              <CardPrimaryButton>Comprar em 12x</CardPrimaryButton>
             </WrapImage>
           </CardOne>
           <CardTwo>
             <WrapImage>
-              <CardImage src={batedeira} alt='foto de batedeira' />
-              <CardPrimaryButton>Comprar em 12x</CardPrimaryButton>
+              <CardImage src={geladeira} alt='foto de geladeira' />
+              <CardPrimaryButton>Mais Detalhes</CardPrimaryButton>
             </WrapImage>
           </CardTwo>
           <CardThree>
@@ -52,7 +52,7 @@ function HeroBanner() {
               <CardImage src={wiskey} alt='foto de wiskey' />
               <CardPrimaryButton>Adicionar à sacola</CardPrimaryButton>
             </WrapImage>
-          </CardThree> */}
+          </CardThree>
         </WrapCard>
       </WrapRight>
     </WrapHeroBanner>

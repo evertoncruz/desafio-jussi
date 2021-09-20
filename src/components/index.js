@@ -1,3 +1,4 @@
+export { default as Header } from './header';
 export { default as HeroBanner } from './hero-banner';
 export { default as LogoBar } from './logo-bar';
 export { default as Solution } from './solution';

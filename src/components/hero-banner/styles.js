@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const WrapHeroBanner = styled.section`
   display: flex;
@@ -16,7 +17,7 @@ export const WrapLeft = styled(WrapSide)``;
 
 
 export const WrapRight = styled(WrapSide)`
-  padding-left: 10px;
+  /* padding-left: 10px; */
 `;
 
 export const ExtraLarge = styled.h2`
@@ -51,7 +52,7 @@ export const Paragraph = styled.p`
   color: #000;
 `;
 
-export const PrimaryButton = styled.button`
+export const PrimaryButton = styled(Link)`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,39 +74,38 @@ export const PrimaryButton = styled.button`
 `;
 
 export const WrapCard = styled.div`
+  display: flex;
+  justify-content: space-between;
   width: 460px;
   height: 480px;
   margin-top: 40px;
-  background-color: #000;
 `;
 
 export const Card = styled.div`
-  /* display: flex;
-  justify-content: center; */
   width: 209px;
-  height: 271px;
-  padding-top: 39px;
+  height: 230px;
   border: 1px solid #F2F2F2;
   box-sizing: border-box;
   box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  background-color: #FFF;
 `;
 
 export const CardOne = styled(Card)`
-
+  
 `;
 
 export const CardTwo = styled(Card)`
-
+  margin-top: 156px;
 `;
 
-export const CardThree = styled(Card)`
-
-`;
+export const CardThree = styled(Card)``;
 
 export const WrapImage = styled.div``;
 
-export const CardImage = styled.img`margin-left: 45px;`;
+export const CardImage = styled.img`
+  margin-left: 20px;
+`;
 
 export const CardPrimaryButton = styled.button`
   display: flex;
@@ -114,8 +114,10 @@ export const CardPrimaryButton = styled.button`
   padding: 12px 24px;
   width: 160px;
   height: 48px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   border: 1px solid #EE0E7D;
   box-sizing: border-box;
   border-radius: 24px;
+  background-color: #FFF;
+  cursor: pointer;
 `;
